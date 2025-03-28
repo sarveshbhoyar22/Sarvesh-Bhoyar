@@ -1,6 +1,4 @@
-Here’s a GitHub profile README description based on your resume:
 
----
 
 # 👋 Hi, I'm Sarvesh Bhoyar!  
 
