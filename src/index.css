@@ -1,0 +1,426 @@
+@import "tailwindcss";
+@plugin "daisyui";
+/* From Uiverse.io by adamgiebl */
+#firstPage , #projects ,#services,#socialMedia {
+    overflow: hidden;
+    
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #000000;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+#techStack{
+    overflow: hidden;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #000000;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+
+/* From Uiverse.io by satyamchaudharydev */
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+/* From Uiverse.io by Nawsome */
+@keyframes clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counter-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.gearbox {
+    background: #111;
+    height: 200px;
+    width: 370px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-radius: 60px;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+
+.gearbox .overlay {
+    border-radius: 6px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    box-shadow: inset 0px 0px 20px black;
+    transition: background 0.2s;
+}
+
+.gearbox .overlay {
+    background: transparent;
+}
+
+.gear {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    border-radius: 30px;
+}
+
+.gear.large {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+
+.gear.large:after {
+    height: 96px;
+    width: 96px;
+    border-radius: 48px;
+    margin-left: -48px;
+    margin-top: -48px;
+}
+
+.gear.one {
+    top: 12px;
+    left: 10px;
+}
+
+.gear.two {
+    top: 61px;
+    left: 60px;
+}
+
+.gear.three {
+    top: 110px;
+    left: 10px;
+}
+
+.gear.four {
+    top: 13px;
+    left: 128px;
+}
+
+.gear:after {
+    content: "";
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border-radius: 36px;
+    background: #111;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+    z-index: 3;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+}
+
+.gear-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #555;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.large .gear-inner {
+    border-radius: 60px;
+}
+
+.gear.one .gear-inner {
+    animation: counter-clockwise 3s infinite linear;
+}
+
+.gear.two .gear-inner {
+    animation: clockwise 3s infinite linear;
+}
+
+.gear.three .gear-inner {
+    animation: counter-clockwise 3s infinite linear;
+}
+
+.gear.four .gear-inner {
+    animation: counter-clockwise 6s infinite linear;
+}
+
+.gear-inner .bar {
+    background: #555;
+    height: 16px;
+    width: 76px;
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.large .gear-inner .bar {
+    margin-left: -68px;
+    width: 136px;
+}
+
+.gear-inner .bar:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.gear-inner .bar:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.gear-inner .bar:nth-child(4) {
+    transform: rotate(90deg);
+}
+
+.gear-inner .bar:nth-child(5) {
+    transform: rotate(30deg);
+}
+
+.gear-inner .bar:nth-child(6) {
+    transform: rotate(150deg);
+}
+
+
+/* card */
+/* From Uiverse.io by ElSombrero2 */
+.card {
+    overflow: visible;
+    width: 190px;
+    height: 254px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+}
+
+.front,
+.back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    0% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.front {
+    transform: rotateY(180deg);
+    color: white;
+}
+
+.front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+}
+
+.description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title p {
+    width: 50%;
+}
+
+.card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+}
+
+.front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+}
+
+#right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+/* card */
+
+
