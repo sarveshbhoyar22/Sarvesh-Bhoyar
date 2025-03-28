@@ -1,12 +1,38 @@
-# React + Vite
+Here’s a GitHub profile README description based on your resume:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# 👋 Hi, I'm Sarvesh Bhoyar!  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 **Web Developer | MERN Stack | AI Enthusiast**  
 
-## Expanding the ESLint configuration
+I'm a Civil Engineering student at **IIT (ISM) Dhanbad**, passionate about **full-stack development, AI, and startups**. I love building scalable web applications and solving real-world problems with technology.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔥 Projects  
+- **[MERN Bank System](https://github.com/sarveshbhoyar22/MERN-BANK-SYSTEM)** 🏦  
+  A full-stack banking system with **secure authentication, real-time transactions, loan processing, and QR-based payments**.  
+- **[MERN OpenChat App](https://github.com/sarveshbhoyar22/OPENCHAT-APP-MERN)** 💬  
+  A **real-time chat app** with **instant messaging, authentication, and a sleek UI** powered by **Socket.IO**.  
+
+## 🛠 Tech Stack  
+- **Frontend:** React.js, Tailwind CSS, DaisyUI  
+- **Backend:** Node.js, Express.js, MongoDB, Socket.IO  
+- **Languages:** JavaScript, Python, C++  
+- **Tools:** Git, GitHub, API Development  
+
+## 👥 Experience  
+🔭 **Web Developer at ASTC (Aeronautics & Space Technology Club)**  
+- Built an **interactive, space-themed website** using **MERN & Three.js** for 3D visualizations.  
+- Implemented **real-time updates** via **Socket.IO** and crafted a **modern UI** with **Tailwind CSS**.  
+
+## 🎯 Achievements & Engagements  
+- **HackFest’24 Participant** 🏆  
+- **Member at BFX-PrISM** (Educating underprivileged children)  
+- **Blogging at Edge Your Thinking** ✍️ (Tech & Psychology)  
+- **Passionate about Badminton, Cricket & Volleyball** 🏸🏏  
+
+📫 **Let's Connect:**  
+[LinkedIn](https://www.linkedin.com/in/sarvesh-bhoyar-711818239/) | [GitHub](https://github.com/sarveshbhoyar22) | [Newsletter](https://www.linkedin.com/newsletters/7054860024942125056/)  
+
+---
+
